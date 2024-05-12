@@ -1,0 +1,97 @@
+<head>
+    <style>
+
+        body {
+        background-color: rgb(119, 230, 82)
+    }
+    
+    .form-control:focus {
+        box-shadow: none;
+        border-color: #BA68C8
+    }
+    
+    .profile-button {
+        background: rgb(99, 39, 120);
+        box-shadow: none;
+        border: none
+    }
+    
+    .profile-button:hover {
+        background: #682773
+    }
+    
+    .profile-button:focus {
+        background: #682773;
+        box-shadow: none
+    }
+    
+    .profile-button:active {
+        background: #682773;
+        box-shadow: none
+    }
+    
+    .back:hover {
+        color: #682773;
+        cursor: pointer
+    }
+    
+    .labels {
+        font-size: 11px
+    }
+    
+    .add-experience:hover {
+        background: #BA68C8;
+        color: #fff;
+        cursor: pointer;
+        border: solid 1px #BA68C8
+    }
+    </style>    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+
+<div class="container rounded bg-white mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-3 border-right">
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="data:image/png;base64,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"><span class="font-weight-bold">Sumedha Bhat</span><span class="text-black-50">bhatsumedha24@gmail.com</span><span> </span></div>
+        </div>
+        <div class="col-md-5 border-right">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="text-right">DOT Domain: Logo Design Profile</h4>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6"><label class="labels">Status</label><input type="text" class="form-control" placeholder="first name" value="Available"></div>
+                    <div class="col-md-6"><label class="labels">Average Time Duration</label><input type="text" class="form-control" value="24 days" placeholder=""></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12"><label class="labels">Level</label><input type="text" class="form-control" placeholder="enter phone number" value="Major Projects"></div>
+                    <div class="col-md-12"><label class="labels"></label>Short Description<input type="text" class="form-control" placeholder="enter address line 1" value="Specialized in crafting unique logo designs to your vision"></div>
+                    <div class="col-md-12"><label class="labels"> Average Price Range</label><input type="text" class="form-control" placeholder="enter address line 2" value="2500 - 5000 INR"></div>
+                    <div class="col-md-12"><label class="labels">Address</label><input type="text" class="form-control" placeholder="enter address line 2" value="Lexington Towers,Bangalore"></div>
+                    
+
+                    <div class="col-md-12"><label class="labels">Mobile</label><input type="text" class="form-control" placeholder="enter email id" value="1234567890"></div>
+                    <div class="col-md-12"><label class="labels">Email ID</label><input type="text" class="form-control" placeholder="education" value="abcdef24@gmail.com"></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="country" value="India"></div>
+                    <div class="col-md-6"><label class="labels">State/Region</label><input type="text" class="form-control" value="" placeholder="Karntaka"></div>
+                </div>
+                <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center experience"><span>Edit Experience</span><span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i>&nbsp;Experience</span></div><br>
+                <div class="col-md-12"><label class="labels">Experience in Designing</label><input type="text" class="form-control" placeholder="experience" value=""></div> <br>
+                <div class="col-md-12"><label class="labels">Additional Details</label><input type="text" class="form-control" placeholder="additional details" value=""></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
